@@ -1,15 +1,57 @@
-# Ansh & Riley Full-Stack Template
+# Jasmine AI Image Generator
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+A powerful AI image generation application built with Next.js, featuring a modern UI and real-time image generation capabilities.
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+## Features
 
-You can also edit the Path's prompt template to be whatever you like!
+- Real-time AI image generation
+- Modern, responsive UI with animations
+- Grid-based image gallery
+- Image download functionality
+- Interactive loading states
+- Mobile-friendly design
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
-- React with Next.js 14 App Router
-- TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Hugging Face API
+- Vercel AI SDK
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/samillinier/jaz.git
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a `.env` file and add your Hugging Face API key:
+```
+HUGGING_FACE_API_KEY=your_api_key_here
+```
+
+4. Run the development server:
+```bash
+npm run dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Deployment
+
+The application is optimized for deployment on Vercel. Follow these steps:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Configure environment variables
+4. Deploy!
+
+## License
+
+MIT License

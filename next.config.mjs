@@ -32,6 +32,21 @@ const nextConfig = {
       },
     ];
   },
+  webpack: (config, { dev, isServer }) => {
+    if (dev && !isServer) {
+      config.watchOptions = {
+        ...config.watchOptions,
+        poll: 500,
+        aggregateTimeout: 300,
+      };
+    }
+    return config;
+  },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb',
+    },
+  },
 };
 
 export default nextConfig;
